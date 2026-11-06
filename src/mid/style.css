@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap');
 
 :root {
   --cream: #f3f1e6;
@@ -16,7 +16,7 @@
 body {
   background: var(--cream);
   color: #111;
-  font-family: "Noto Sans KR", sans-serif;
+  font-family: 'Noto Sans KR', sans-serif;
 }
 
 .poster {
@@ -66,12 +66,8 @@ body {
   font-weight: 700;
 }
 
-.orange {
-  color: var(--orange);
-}
-.blue {
-  color: var(--blue);
-}
+.orange { color: var(--orange); }
+.blue { color: var(--blue); }
 
 .date {
   grid-column: 9 / 13;
@@ -192,48 +188,21 @@ h1 {
 }
 
 @media (max-width: 1024px) {
-  .poster {
-    grid-template-columns: repeat(8, 1fr);
-  }
+  .poster { grid-template-columns: repeat(8, 1fr); }
 
-  .panel {
-    grid-column: 6 / 9;
-  }
-  .tab {
-    width: 4vw;
-  }
-  .bar {
-    grid-column: 6 / 9;
-  }
-  .shape {
-    width: 18vw;
-  }
+  .panel { grid-column: 6 / 9; }
+  .tab { width: 4vw; }
+  .bar { grid-column: 6 / 9; }
+  .shape { width: 18vw; }
 
-  .exhibit {
-    grid-column: 1 / 6;
-    font-size: 2vw;
-  }
-  .date {
-    grid-column: 6 / 9;
-    font-size: 2.4vw;
-  }
+  .exhibit { grid-column: 1 / 6; font-size: 2vw; }
+  .date { grid-column: 6 / 9; font-size: 2.4vw; }
 
-  h1 {
-    grid-column: 2 / 6;
-  }
-  .from {
-    grid-column: 5;
-  }
-  .line {
-    grid-column: 5 / 7;
-  }
-  .to {
-    grid-column: 6 / 9;
-  }
-  .sub {
-    grid-column: 2 / 6;
-    font-size: 1.7vw;
-  }
+  h1 { grid-column: 2 / 6; }
+  .from { grid-column: 5; }
+  .line { grid-column: 5 / 7; }
+  .to { grid-column: 6 / 9; }
+  .sub { grid-column: 2 / 6; font-size: 1.7vw; }
 
   .text {
     grid-column: 2 / 6;
@@ -241,15 +210,11 @@ h1 {
     gap: 1rem;
   }
 
-  .address {
-    grid-column: 2 / 6;
-  }
-  .hours {
-    grid-column: 5 / 9;
-  }
-  .hours span {
-    width: 25%;
-  }
+  .text p { flex: none; }
+
+  .address { grid-column: 2 / 6; }
+  .hours { grid-column: 5 / 9; }
+  .hours span { width: 25%; }
 }
 
 @media (max-width: 640px) {
@@ -258,65 +223,22 @@ h1 {
     grid-template-rows: auto auto auto auto 1fr auto auto auto auto;
   }
 
-  .panel {
-    grid-column: 1 / -1;
-    grid-row: 7 / -1;
-  }
-  .tab {
-    width: 5vw;
-    height: 10vh;
-  }
-  .shape {
-    grid-column: 2 / 5;
-    width: 30vw;
-    margin: 1.5rem 0 0;
-  }
+  .panel { grid-column: 1 / -1; grid-row: 7 / -1; }
+  .tab { width: 5vw; height: 10vh; }
+  .shape { grid-column: 2 / 5; width: 30vw; margin: 1.5rem 0 0; }
 
-  .exhibit {
-    grid-column: 2 / 8;
-    padding: 1rem 0 0;
-    font-size: 0.8rem;
-  }
+  .exhibit { grid-column: 2 / 8; padding: 1rem 0 0; font-size: 0.8rem; }
 
-  h1 {
-    grid-column: 2 / 8;
-    font-size: 16vw;
-  }
-  .from {
-    grid-column: 7;
-    font-size: 4.4vw;
-  }
-  .line {
-    grid-column: 7 / 9;
-  }
-  .to {
-    grid-column: 7;
-    padding-left: 0;
-    color: #111;
-    font-size: 4.4vw;
-  }
-  .sub {
-    grid-column: 2 / 7;
-    font-size: 0.75rem;
-  }
+  h1 { grid-column: 2 / 8; font-size: 16vw; }
+  .from { grid-column: 7; font-size: 4.4vw; }
+  .line { grid-column: 7 / 9; }
+  .to { grid-column: 7; padding-left: 0; color: #111; font-size: 4.4vw; }
+  .sub { grid-column: 2 / 7; font-size: 0.75rem; }
 
-  .text {
-    grid-column: 2 / 8;
-    padding: 1.5rem 0 2rem;
-    font-size: 0.875rem;
-  }
+  .text { grid-column: 2 / 8; padding: 1.5rem 0 2rem; font-size: 0.875rem; }
 
-  .date {
-    grid-column: 2 / 8;
-    grid-row: 6;
-    padding-left: 0;
-    font-size: 5.6vw;
-  }
-  .bar {
-    grid-column: 1 / -1;
-    grid-row: 7;
-    height: 4vw;
-  }
+  .date { grid-column: 2 / 8; grid-row: 6; padding-left: 0; font-size: 5.6vw; }
+  .bar { grid-column: 1 / -1; grid-row: 7; height: 4vw; }
 
   .hours {
     grid-column: 2 / 8;
@@ -325,13 +247,8 @@ h1 {
     align-self: start;
     padding: 1rem 0 0.5rem;
   }
-  .hours span {
-    width: auto;
-    color: #111;
-  }
-  .hours p {
-    padding-left: 0;
-  }
+  .hours span { width: auto; color: #111; }
+  .hours p { padding-left: 0; }
 
   .address {
     grid-column: 2 / 8;
